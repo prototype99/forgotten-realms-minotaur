@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Forgotten Realms - Minotaur (Continued)</name>
+  <author>Zaljerem</author>
+  <packageId>zal.minotaur</packageId>
+  <supportedVersions>
+	<li>1.4</li>
+	<li>1.5</li>
+	<li>1.6</li>
+  </supportedVersions>
+<modVersion IgnoreIfNoMatchingField="True">1.0.9</modVersion>
+	<modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>erdelf.HumanoidAlienRaces</li>    
+  </loadAfter>
+  <description>
+Original mod by SalmonToastie
+https://steamcommunity.com/sharedfiles/filedetails/?id=2516678618
+If the original author requests it, I will remove this update.
+
+--
+
+Requires Humanoid Alien Races
+See original mod page for more detail.
+
+--
+
+Original mod notes (1.3):
+
+This mod adds playable Minotaur.
+	</description>
+</ModMetaData>

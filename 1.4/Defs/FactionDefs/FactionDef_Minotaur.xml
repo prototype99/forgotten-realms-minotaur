@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FactionDef ParentName="FactionBase" Name="FR_MinotaurTribeBase" Abstract="True">
+        <defName>FR_MinotaurTribes</defName>        
+        <description>The collective settlements of Minotaur in this realm.</description>
+        <colorSpectrum>
+            <li>(214, 79, 79)</li>
+        </colorSpectrum>        
+		<pawnSingular>Minotaur</pawnSingular>
+		<pawnsPlural>Minotaur</pawnsPlural>
+		<categoryTag>Outlander</categoryTag>
+		<leaderTitle>chief</leaderTitle>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<canSiege>false</canSiege>
+		<settlementGenerationWeight>0.35</settlementGenerationWeight>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<factionIconPath>WorldIcons/Maze</factionIconPath>		
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>		
+		<techLevel>Medieval</techLevel>
+		<allowedCultures><li>MinotaurCulture</li></allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>		
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+			<li>Caravan_Neolithic_Slaver</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		
+		<maxPawnCostPerTotalPointsCurve>
+		<points>
+			<li>(0,35)</li>
+			<li>(70, 50)</li>
+			<li>(800, 100)</li>
+			<li>(1300, 150)</li>
+			<li>(100000, 10000)</li>
+		</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <FR_MinotaurTribes_Peasant>20</FR_MinotaurTribes_Peasant>
+                    <FR_MinotaurTribes_Fighter>40</FR_MinotaurTribes_Fighter>
+                    <FR_MinotaurTribes_Warrior>30</FR_MinotaurTribes_Warrior>
+                    <FR_MinotaurTribes_Bowman>30</FR_MinotaurTribes_Bowman>
+                    <FR_MinotaurTribes_Champion>30</FR_MinotaurTribes_Champion>
+                    <FR_MinotaurTribes_Chief>10</FR_MinotaurTribes_Chief>				
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <FR_MinotaurTribes_Bowman>100</FR_MinotaurTribes_Bowman>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <FR_MinotaurTribes_Peasant>15</FR_MinotaurTribes_Peasant>
+                    <FR_MinotaurTribes_Fighter>40</FR_MinotaurTribes_Fighter>
+                    <FR_MinotaurTribes_Warrior>40</FR_MinotaurTribes_Warrior>
+                    <FR_MinotaurTribes_Champion>30</FR_MinotaurTribes_Champion>
+                    <FR_MinotaurTribes_Chief>5</FR_MinotaurTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FR_MinotaurTribes_Fighter>30</FR_MinotaurTribes_Fighter>
+                    <FR_MinotaurTribes_Warrior>30</FR_MinotaurTribes_Warrior>
+                    <FR_MinotaurTribes_Bowman>30</FR_MinotaurTribes_Bowman>
+                    <FR_MinotaurTribes_Champion>20</FR_MinotaurTribes_Champion>
+                    <FR_MinotaurTribes_Chief>10</FR_MinotaurTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <FR_MinotaurTribes_Merchant>1</FR_MinotaurTribes_Merchant>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <FR_MinotaurTribes_Fighter>30</FR_MinotaurTribes_Fighter>
+                    <FR_MinotaurTribes_Warrior>30</FR_MinotaurTribes_Warrior>
+                    <FR_MinotaurTribes_Bowman>30</FR_MinotaurTribes_Bowman>
+                    <FR_MinotaurTribes_Champion>20</FR_MinotaurTribes_Champion>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <FR_MinotaurTribes_Peasant>20</FR_MinotaurTribes_Peasant>
+                    <FR_MinotaurTribes_Fighter>20</FR_MinotaurTribes_Fighter>
+                    <FR_MinotaurTribes_Warrior>20</FR_MinotaurTribes_Warrior>
+                    <FR_MinotaurTribes_Bowman>50</FR_MinotaurTribes_Bowman>
+                    <FR_MinotaurTribes_Champion>30</FR_MinotaurTribes_Champion>
+                    <FR_MinotaurTribes_Chief>50</FR_MinotaurTribes_Chief>
+                </options>
+            </li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+<FactionDef ParentName="FR_MinotaurTribeBase">
+		<defName>MinotaurSettlements</defName>
+		<label>minotaur Settlements</label>
+		<description>Various Minotaur tribes and clans. They are unruly and like the taste of human flesh.</description>
+		<colorSpectrum>
+			<li>(214, 79, 79)</li>					
+		</colorSpectrum>
+		<naturalEnemy>true</naturalEnemy>
+		<settlementTexturePath>WorldIcons/Maze</settlementTexturePath>
+		<factionIconPath>WorldIcons/Maze</factionIconPath>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+
+</Defs>

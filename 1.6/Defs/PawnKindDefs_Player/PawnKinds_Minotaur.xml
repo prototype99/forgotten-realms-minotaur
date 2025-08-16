@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="BaseMinotaurPawnKind">
+		<defName>FR_Minotaur</defName>
+		<label>Minotaur</label>
+		<race>FR_Alien_Minotaur</race>
+		<combatPower>50</combatPower>		
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<defaultFactionType>FR_MinotaurPlayerColony</defaultFactionType>
+		<initialWillRange>2~5</initialWillRange>
+	        <initialResistanceRange>25~30</initialResistanceRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>50</min>
+			<max>800</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="BaseTribalMinotaurPawnKind">
+		<defName>FR_MinotaurTribal</defName>
+		<label>Tribal Minotaur</label>
+		<race>FR_Alien_Minotaur</race>
+		<combatPower>50</combatPower>		
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<defaultFactionType>FR_MinotaurPlayerTribe</defaultFactionType>
+		<initialWillRange>2~5</initialWillRange>
+	        <initialResistanceRange>25~30</initialResistanceRange>
+		<apparelTags>
+			<li>Medieval</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>200</min>
+			<max>200</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>50</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+</Defs>

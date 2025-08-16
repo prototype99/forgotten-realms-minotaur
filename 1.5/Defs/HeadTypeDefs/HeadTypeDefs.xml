@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>HeadI</defName>
+    <graphicPath>Pawn/Minotaur/Head1</graphicPath>    
+    <gender>None</gender>
+  </HeadTypeDef>
+ 
+
+</Defs>
