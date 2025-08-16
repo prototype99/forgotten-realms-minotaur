@@ -362,7 +362,6 @@
 			<thoughtSettings>
 				<cannotReceiveThoughts>
 					<li>ObservedLayingCorpse</li>
-					<li>EnvironmentDark</li>
 					<li>NeedOutdoors</li>
 					<li>DeadMansApparel</li>
 					<li>KnowGuestExecuted</li>
